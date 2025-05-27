@@ -15,4 +15,5 @@ const TrafficDataSchema = new mongoose.Schema({
   timestamps: true,
 });
 
-module.exports = mongoose.model('TrafficData', TrafficDataSchema);
+module.exports = mongoose.model('TrafficData', TrafficDataSchema, 'trafico');
+
