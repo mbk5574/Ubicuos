@@ -5,7 +5,9 @@ const mongoose = require('mongoose');
 const connectDB = async () => {
   try {
     // mongoose.connect devuelve una Promesa, por eso usamos await
-    await mongoose.connect(process.env.MONGO_URI);
+    await mongoose.connect(process.env.MONGO_URI, {
+      dbName: 'mongoUbicuos'  // 👈 esto fuerza el uso de tu base real
+});
 
     console.log('MongoDB Connected...');
   } catch (err) {

@@ -26,4 +26,5 @@ const AccidentSchema = new mongoose.Schema({
   timestamps: true,
 });
 
-module.exports = mongoose.model('Accident', AccidentSchema);
+module.exports = mongoose.model('Accident', AccidentSchema, 'accidentalidad');
+

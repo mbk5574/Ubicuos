@@ -65,4 +65,5 @@ const AirDataSchema = new mongoose.Schema({
   timestamps: true,
 });
 
-module.exports = mongoose.model('AirData', AirDataSchema);
+module.exports = mongoose.model('AirData', AirDataSchema, 'aire');
+

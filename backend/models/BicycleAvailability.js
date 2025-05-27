@@ -14,4 +14,4 @@ const BicycleAvailabilitySchema = new mongoose.Schema({
   timestamps: true,
 });
 
-module.exports = mongoose.model('BicycleAvailability', BicycleAvailabilitySchema);
+module.exports = mongoose.model('BicycleAvailability', BicycleAvailabilitySchema, 'bicicletasDisponibilidad');
